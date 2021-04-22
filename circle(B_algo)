@@ -7,9 +7,9 @@
     void    drawCircle(int xc,int yc,int x,int y)  
    {  
     putpixel(x+xc,y+yc,RED);  
-    putpixel(x+xc,-y+yc,YELLOW);  
-    putpixel(-x+xc,-y+yc,GREEN);  
-    putpixel(-x+xc,y+yc,YELLOW);  
+    putpixel(x+xc,-y+yc,RED);  
+    putpixel(-x+xc,-y+yc,RED);  
+    putpixel(-x+xc,y+yc,RED);  
     putpixel(y+xc,x+yc,12);  
     putpixel(y+xc,-x+yc,14);  
     putpixel(-y+xc,-x+yc,15);  
