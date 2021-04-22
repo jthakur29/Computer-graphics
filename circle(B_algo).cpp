@@ -4,7 +4,7 @@
 #include <conio.h>  
 #include <math.h>  
   
-    void    drawCircle(int xc,int yc,int x,int y)  
+    void drawCircle(int xc,int yc,int x,int y)  
    {  
     putpixel(x+xc,y+yc,RED);  
     putpixel(x+xc,-y+yc,RED);  
@@ -37,12 +37,11 @@
       }  
     }  
   
-    int  main(void)  
+    int  main()  
    {  
     int gdriver = DETECT, gmode,xc,yc,r, errorcode;  
    initgraph(&gdriver, &gmode, "C:\\TURBOC3\\BGI");  
- 
-     errorcode = graphresult();  
+   errorcode = graphresult();  
   
       if (errorcode != grOk)  
      {  
@@ -56,7 +55,6 @@
        printf("Enter the value of radius  :");  
        scanf("%d",&r);  
        BresenhamCircle(xc,yc,r);  
-  
      getch();  
      closegraph();  
      return 0;  
