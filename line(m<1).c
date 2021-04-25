@@ -20,8 +20,7 @@ void drawline(int x0,int y0,int x1,int y1){
             x=x+1;
         }
     }
-    
-}
+ }
 
 int main(){
     int gd=DETECT,gm,error,x0,y0,x1,y1;
